@@ -59,7 +59,7 @@
       .attr("transform", "rotate(-90)")
       .text("Quantidade")
     
-    d3.csv("./articles_dataframe.csv").then(data => {
+    d3.csv("https://raw.githubusercontent.com/JoseJuniorTK/JoseJunior.github.io/main/articles_dataframe.csv").then(data => {
       data.forEach(d => {
         d.Quantidade = Number(d.Quantidade)
       })
